@@ -24,7 +24,7 @@ To reproduce the hyper-representation experiments on MNIST dataset, the [**scrip
 >python reproduce/fig2.py
 
 ### Figure 3
-![alt](figs/fig3.png)
+![alt](figs/fig31.png)
 
 
 To reproduce the imbalanced learning experiments on MNIST dataset, the [**script**](reproduce/fig3.sh) provides the setup. After running this script, use following command to generate the corresponding figure.
