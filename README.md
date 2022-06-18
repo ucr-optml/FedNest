@@ -2,7 +2,7 @@
 
 ![alt ](figs/fig1.png)
 
-This is the implenmentation of [*FEDNEST: Federated Bilevel, Minimax, and Compositional Optimization*](https://arxiv.org/abs/2205.02215), in ICML 2022. 
+This directory contains source code for evaluating federated federated learning with different optimizers on various models and tasks.  The code was originally developed for the paper [*FEDNEST: Federated Bilevel, Minimax, and Compositional Optimization*](https://arxiv.org/abs/2205.02215), in ICML 2022. 
 
 The federated code is adopted from [shaoxiongji's](https://github.com/shaoxiongji/federated-learning) implenmentation under MIT license. The bilevel implenmentation follows the algorithm of [*Optimizing Millions of Hyperparameters by Implicit Differentiation (Jonathan Lorraine, Paul Vicol, David Duvenaud)*](https://arxiv.org/abs/1911.02590). The parametric loss tuning experiments on imbalanced dataset follows the loss function design idea of [*AutoBalance: Optimized Loss Functions for
 Imbalanced Data(Mingchen Li
