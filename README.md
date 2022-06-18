@@ -18,22 +18,22 @@ pytorch>=0.4
 
 # Reproducing Results on FL Benchmark Tasks
 
-### Figure 2
+### Hyper-Representation Learning
 ![alt](figs/fig2.png)
 
 To reproduce the hyper-representation experiments on MNIST dataset, the [**script**](reproduce/fig2.sh) provides the setup. After running this script, use following command to generate the corresponding figure.
 >python reproduce/fig2.py
 
-### Figure 3
+### Loss Function Tuning on Imbalanced Dataset
 ![alt](figs/fig31.png)
-Figure3: Loss function tuning on a 3-layer MLP and imbalanced MNIST dataset to maximize class-balanced test accuracy. The brown dashed line is the accuracy on [*non-federated bilevel optimization*](https://openreview.net/pdf?id=ebQXflQre5a), and the  black dashed line is the accuracy without tuning the loss function.
+Figure 3: Loss function tuning on a 3-layer MLP and imbalanced MNIST dataset to maximize class-balanced test accuracy. The brown dashed line is the accuracy on [*non-federated bilevel optimization*](https://openreview.net/pdf?id=ebQXflQre5a), and the  black dashed line is the accuracy without tuning the loss function.
 
 
 To reproduce the imbalanced learning experiments on MNIST dataset, the [**script**](reproduce/fig3.sh) provides the setup. After running this script, use following command to generate the corresponding figure.
 >python reproduce/fig3.py
 
 
-### Figure 4
+### Federated Minimax Problem
 ![alt](figs/fig4.png)
 
 For Figure 4, directly runing the jupyter notebook file [minmax_synthetic.ipynb](minmax_synthetic.ipynb) will generate the result.
