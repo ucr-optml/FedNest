@@ -26,7 +26,7 @@ To reproduce the hyper-representation experiments on MNIST dataset, the [**scrip
 
 ### Figure 3
 ![alt](figs/fig31.png)
-Figure3: Loss function tuning on a 3-layer MLP and imbalanced MNIST dataset to maximize class-balanced test accuracy. The brown dashed line is the accuracy on non-federated bilevel optimization~(https://openreview.net/pdf?id=ebQXflQre5a), and the  black dashed line is the accuracy without tuning the loss function.
+Figure3: Loss function tuning on a 3-layer MLP and imbalanced MNIST dataset to maximize class-balanced test accuracy. The brown dashed line is the accuracy on [*non-federated bilevel optimization*](https://openreview.net/pdf?id=ebQXflQre5a), and the  black dashed line is the accuracy without tuning the loss function.
 
 
 To reproduce the imbalanced learning experiments on MNIST dataset, the [**script**](reproduce/fig3.sh) provides the setup. After running this script, use following command to generate the corresponding figure.
