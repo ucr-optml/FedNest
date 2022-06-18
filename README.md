@@ -5,7 +5,8 @@
 This directory contains source code for evaluating federated bilevel learning with different optimizers on various models and tasks.  The code was originally developed for the paper [*FEDNEST: Federated Bilevel, Minimax, and Compositional Optimization*](https://arxiv.org/abs/2205.02215), in ICML 2022. The federated code is adopted from [shaoxiongji's](https://github.com/shaoxiongji/federated-learning) implenmentation under MIT license. 
 
 
-- The bilevel implenmentation follows the algorithm of [*Optimizing Millions of Hyperparameters by Implicit Differentiation (Jonathan Lorraine, Paul Vicol, David Duvenaud)*](https://arxiv.org/abs/1911.02590). 
+- The bilevel implenmentation follows the algorithm of 
+[*Optimizing Millions of Hyperparameters by Implicit Differentiation (Jonathan Lorraine, Paul Vicol, David Duvenaud)*](https://arxiv.org/abs/1911.02590). 
 - The parametric loss tuning experiments on imbalanced dataset follows the loss function design idea of 
 [*AutoBalance: Optimized Loss Functions for Imbalanced Data(Mingchen Li, Xuechen Zhang, Christos Thrampoulidis, Jiasi Chen, Samet Oymak)*](https://openreview.net/pdf?id=ebQXflQre5a), but we only use MNIST in imbalanced loss function design. 
 
@@ -25,7 +26,7 @@ To reproduce the hyper-representation experiments on MNIST dataset, the [**scrip
 
 ### Figure 3
 ![alt](figs/fig31.png)
-Figure3: Loss function tuning on a 3-layer MLP and imbalanced MNIST dataset to maximize \emph{class-balanced test accuracy}. The \emph{brown dashed} line is the accuracy on non-federated bilevel optimization~\cite{li2021autobalance}, and the \emph{black dashed} line is the accuracy without tuning the loss function.
+Figure3: Loss function tuning on a 3-layer MLP and imbalanced MNIST dataset to maximize class-balanced test accuracy. The brown dashed line is the accuracy on non-federated bilevel optimization~(https://openreview.net/pdf?id=ebQXflQre5a), and the  black dashed line is the accuracy without tuning the loss function.
 
 
 To reproduce the imbalanced learning experiments on MNIST dataset, the [**script**](reproduce/fig3.sh) provides the setup. After running this script, use following command to generate the corresponding figure.
