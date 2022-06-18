@@ -1,22 +1,20 @@
-# FEDNEST: Federated Bilevel, Minimax, and Compositional Optimization {
-  font-size: 75;
-}
+# FEDNEST: Federated Bilevel, Minimax, and Compositional Optimization
 
 ![alt ](figs/fig1.png)
 
-This directory contains source code for evaluating federated bilevel learning with different optimizers on various models and tasks.  The code was originally developed for the paper [*FEDNEST: Federated Bilevel, Minimax, and Compositional Optimization*](https://arxiv.org/abs/2205.02215), in ICML 2022. 
+This directory contains source code for evaluating federated bilevel learning with different optimizers on various models and tasks.  The code was originally developed for the paper [*FEDNEST: Federated Bilevel, Minimax, and Compositional Optimization*](https://arxiv.org/abs/2205.02215), in ICML 2022. The federated code is adopted from [shaoxiongji's](https://github.com/shaoxiongji/federated-learning) implenmentation under MIT license. 
 
-The federated code is adopted from [shaoxiongji's](https://github.com/shaoxiongji/federated-learning) implenmentation under MIT license. The bilevel implenmentation follows the algorithm of [*Optimizing Millions of Hyperparameters by Implicit Differentiation (Jonathan Lorraine, Paul Vicol, David Duvenaud)*](https://arxiv.org/abs/1911.02590). The parametric loss tuning experiments on imbalanced dataset follows the loss function design idea of [*AutoBalance: Optimized Loss Functions for
-Imbalanced Data(Mingchen Li
-, Xuechen Zhang, Christos Thrampoulidis, Jiasi Chen, Samet Oymak)*](https://openreview.net/pdf?id=ebQXflQre5a), but we only use MNIST in imbalanced loss function design.
+
+- The bilevel implenmentation follows the algorithm of[*Optimizing Millions of Hyperparameters by Implicit Differentiation (Jonathan Lorraine, Paul Vicol, David Duvenaud)*](https://arxiv.org/abs/1911.02590). 
+- 
 
 Note: The scripts will be slow without the implementation of parallel computing. 
 
-## Requirements
+# Requirements
 python>=3.6  
 pytorch>=0.4
 
-## Reproducing results on FL benchmark tasks
+# Reproducing results on FL benchmark tasks
 
 ### Figure 2
 ![alt](figs/fig2.png)
@@ -27,6 +25,9 @@ To reproduce the hyper-representation experiments on MNIST dataset, the [**scrip
 ### Figure 3
 ![alt](figs/fig3.png)
 
+The parametric loss tuning experiments on imbalanced dataset follows the loss function design idea of 
+[*AutoBalance: Optimized Loss Functions for
+Imbalanced Data(Mingchen Li, Xuechen Zhang, Christos Thrampoulidis, Jiasi Chen, Samet Oymak)*](https://openreview.net/pdf?id=ebQXflQre5a), but we only use MNIST in imbalanced loss function design. 
 To reproduce the imbalanced learning experiments on MNIST dataset, the [**script**](reproduce/fig3.sh) provides the setup. After running this script, use following command to generate the corresponding figure.
 >python reproduce/fig3.py
 
