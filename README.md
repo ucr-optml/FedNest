@@ -15,7 +15,7 @@ Note: The scripts will be slow without the implementation of parallel computing.
 python>=3.6  
 pytorch>=0.4
 
-# Reproducing results on FL benchmark tasks
+# Reproducing Results on FL Benchmark Tasks
 
 ### Figure 2
 ![alt](figs/fig2.png)
