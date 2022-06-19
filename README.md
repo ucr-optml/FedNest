@@ -6,7 +6,6 @@ This directory contains source code for evaluating federated bilevel learning wi
 
 $$
 minimize_{x \in \mathbb{R}^{{d}_1}} f(x)=\frac{1}{m} \sum_{i=1}^{m} f_{i}(x,y^*(x)) 
-
 \text{subj.~to}  \m{y}^*(\m{\m{x}}) = argmin_{\m{y}\in \mathbb{R}^{{d}_1}}} \frac{1}{m}\sum_{i=1}^{m} g_i (x,y).
 $$
 
