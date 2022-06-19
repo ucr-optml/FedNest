@@ -4,19 +4,11 @@
 
 This directory contains source code for evaluating federated bilevel learning with different optimizers on various models and tasks.  In federated bilevel learning, we consider the following nested optimization problem as depicted in Figure \ref{fig_main}:
 
-\begin{subequations}\label{fedblo:prob}
-\begin{align}
-\begin{array}{ll}
-\underset{\m{x} \in \mb{R}^{{d}_1}}{\min} &
-\begin{array}{c}
-f(\m{x})=\frac{1}{m} \sum_{i=1}^{m} f_{i}\left(\m{x},\m{y}^*(\m{x})\right) %{\rm\sf (outer)} 
-\end{array}\\
-\text{subj.~to} & \begin{array}[t]{l} \m{y}^*(\m{\m{x}})
-%=
-\in \underset{ \m{y}\in \mb{R}^{{d}_2}}{\textnormal{argmin}}~~\frac{1}{m}\sum_{i=1}^{m} g_i\left(\m{x},\m{y}\right). % ~~~~~~~~~~~~~~~~~~~~{\rm\sf (inner)} 
-\end{array}
-\end{array}
-\end{align}
+$$
+minimize_{x \in \mathbb{R}^{{d}_1}} f(x)=\frac{1}{m} \sum_{i=1}^{m} f_{i}(x,y^*(x)) 
+
+\text{subj.~to}  \m{y}^*(\m{\m{x}}) = argmin_{\m{y}\in \mathbb{R}^{{d}_1}}} \frac{1}{m}\sum_{i=1}^{m} g_i (x,y).
+$$
 
 The code was originally developed for the paper [*FedNest: Federated Bilevel, Minimax, and Compositional Optimization*](https://arxiv.org/abs/2205.02215), in ICML 2022. The federated code is adopted from [shaoxiongji's](https://github.com/shaoxiongji/federated-learning) implenmentation under MIT license. 
 
