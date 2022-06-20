@@ -7,7 +7,9 @@ $$\min_{x \in \mathbb{R}^{d_1}}~f(x)=\frac{1}{m} \sum_{i=1}^{m}~f_{i}(x,y^*(x))$
 
 $$\text{subj. to  }  y^*(x)\in \text{arg}min_{y\in \mathbb{R}^{d_2}}\frac{1}{m}\sum_{i=1}^{m} g_i(x,y).$$
 
-The code was originally developed for the paper [*FedNest: Federated Bilevel, Minimax, and Compositional Optimization*](https://arxiv.org/abs/2205.02215), in ICML 2022. The federated code is adopted from [shaoxiongji's](https://github.com/shaoxiongji/federated-learning) implenmentation under MIT license. 
+The code was originally developed for the paper
+ FedNest: Federated Bilevel, Minimax, and Compositional Optimization [*arXiv](https://arxiv.org/abs/2205.02215) [*IMCL 2022](https://icml.cc/Conferences/2022/Schedule?showEvent=17792).
+The federated code is adopted from [shaoxiongji's](https://github.com/shaoxiongji/federated-learning) implenmentation under MIT license. 
 
 
 - The bilevel implenmentation follows the algorithm of 
