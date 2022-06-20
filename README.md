@@ -14,6 +14,11 @@ The code was originally developed for the paper [*FedNest: Federated Bilevel, Mi
 [*Optimizing Millions of Hyperparameters by Implicit Differentiation (Jonathan Lorraine, Paul Vicol, David Duvenaud)*](https://arxiv.org/abs/1911.02590). 
 - The parametric loss tuning experiments on imbalanced dataset follows the loss function design idea of 
 [*AutoBalance: Optimized Loss Functions for Imbalanced Data(Mingchen Li, Xuechen Zhang, Christos Thrampoulidis, Jiasi Chen, Samet Oymak)*](https://openreview.net/pdf?id=ebQXflQre5a), but we only use MNIST in imbalanced loss function design. 
+- We conduct experiments on the minimax problem, i.e. the federated bilevel problem with $g_i(\x,\y):=-f_i(\x,\y)$ for all $i \in [m]$, where 
+$$
+f_i(x,y)=-\frac{1}{2}\|y\|^2 -b_i^\top y + y^\top A_i x + \frac{\lambda}{2} \|x\|^2,
+$$
+
 
 Note: The scripts will be slow without the implementation of parallel computing. 
 
